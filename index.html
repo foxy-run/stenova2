@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <style>
+    #panorama {
+      width: 1280px;
+      height: 720px;
+      margin-left: 150px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+  pannellum.viewer('panorama', {
+    "default": {
+      "firstScene": "pan1",
+      "autoLoad": true,
+      "sceneFadeDuration": 1000,
+      "autoRotate": -5
+    },
+
+    "scenes": {
+      "pan1": {
+        "title": "Панорама 1",
+        "hfov": 110,
+        "pitch": -3,
+        "yaw": 117,
+        "type": "equirectangular",
+        "panorama": "https://disk.yandex.ru/i/KmzatjGkMTsUbg",
+        "hotSpots": [
+          {
+            "pitch": -2.1,
+            "yaw": 132.9,
+            "type": "scene",
+            "text": "Панорама 2",
+            "sceneId": "pan2"
+          }
+        ]
+      },
+
+      "pan2": {
+        "title": "Панорама 2",
+        "hfov": 110,
+        "yaw": 5,
+        "type": "equirectangular",
+        "panorama": "panoram/286152-enhance-2x.jpg",
+        "hotSpots": [
+          {
+            "pitch": -0.6,
+            "yaw": 37.1,
+            "type": "scene",
+            "text": "Панорама 3",
+            "sceneId": "pan3",
+            "targetYaw": -23,
+            "targetPitch": 2
+          }
+        ]
+      },
+
+
+      "pan3": {
+        "title": "Панорама 3",
+        "hfov": 110,
+        "yaw": 5,
+        "type": "equirectangular",
+        "panorama": "panoram/286154-enhance-2x.jpg",
+        "hotSpots": [
+          {
+            "pitch": -0.6,
+            "yaw": 37.1,
+            "type": "scene",
+            "text": "Панорама 4",
+            "sceneId": "pan4",
+            "targetYaw": -23,
+            "targetPitch": 2
+          }
+        ]
+      },
+
+      "pan4": {
+        "title": "Панорама 4",
+        "hfov": 110,
+        "yaw": 5,
+        "type": "equirectangular",
+        "panorama": "panoram/286156-enhance-2x.jpg",
+        "hotSpots": [
+          {
+            "pitch": -0.6,
+            "yaw": 37.1,
+            "type": "scene",
+            "text": "Панорама 5",
+            "sceneId": "pan5",
+            "targetYaw": -23,
+            "targetPitch": 2
+          }
+        ]
+      },
+
+      "pan5": {
+        "title": "Панорама 5",
+        "hfov": 110,
+        "yaw": 5,
+        "type": "equirectangular",
+        "panorama": "panoram/286157-enhance-2x.jpg",
+        "hotSpots": [
+          {
+            "pitch": -0.6,
+            "yaw": 37.1,
+            "type": "scene",
+            "text": "Панорама 6",
+            "sceneId": "pan6",
+            "targetYaw": -23,
+            "targetPitch": 2
+          }
+        ]
+      },
+
+      "pan6": {
+        "title": "Панорама 6",
+        "hfov": 110,
+        "yaw": 5,
+        "type": "equirectangular",
+        "panorama": "panoram/286158-enhance-2x.jpg",
+        "hotSpots": [
+          {
+            "pitch": -0.6,
+            "yaw": 37.1,
+            "type": "scene",
+            "text": "Панорама 1",
+            "sceneId": "pan1",
+            "targetYaw": -23,
+            "targetPitch": 2
+          }
+        ]
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
